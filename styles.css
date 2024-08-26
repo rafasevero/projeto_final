@@ -1,0 +1,133 @@
+/* Remove o espaçamento padrão e define a box-sizing para border-box, 
+   o que faz com que o padding e a borda sejam incluídos no tamanho total dos elementos. */
+   *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Define a fonte padrão para todo o documento. */
+}
+
+body{
+    background-image: url(./fundo.jpg); /* Define uma imagem de fundo. */
+    background-position: center; /* Centraliza a imagem de fundo. */
+    background-repeat: no-repeat; /* Evita que a imagem de fundo se repita. */
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a área do corpo, mantendo a proporção. */
+    display: flex; /* Usa flexbox para alinhar o conteúdo do body. */
+    align-items: center; /* Alinha o conteúdo no centro verticalmente. */
+    justify-content: center; /* Alinha o conteúdo no centro horizontalmente. */
+    padding: 20px; /* Adiciona um padding de 20px ao corpo. */
+    min-height: 100vh; /* Define a altura mínima do corpo como 100% da altura da tela. */
+}
+
+.w50{
+    width: 50%; /* Define a largura de 50% para o elemento, usado para dividir o layout em duas colunas. */
+    float: left; /* Alinha o elemento à esquerda, permitindo que outro elemento flutue ao lado. */
+    padding-right: 15px; /* Adiciona um padding à direita de 15px. */
+}
+
+.box{
+    display: flex; /* Usa flexbox para organizar os filhos da .box horizontalmente. */
+    width: 930px; /* Define a largura total da .box. */
+}
+
+.img-box{
+    background-color: rgba(255, 255, 255, 0.5); /* Define uma cor de fundo branca semi-transparente. */
+    width: 50%; /* Define a largura como 50%, para ocupar metade da .box. */
+    display: flex; /* Usa flexbox para centralizar o conteúdo dentro da .img-box. */
+    align-items: center; /* Alinha verticalmente o conteúdo ao centro. */
+    padding: 20px; /* Adiciona um padding de 20px ao redor do conteúdo. */
+    border-radius: 20px  0 0 20px; /* Arredonda os cantos superior esquerdo e inferior esquerdo. */
+}
+
+.img-box img{
+    width: 100%; /* Faz a imagem dentro da .img-box ocupar toda a largura disponível. */
+}
+
+.form-box{
+    background-color: rgba(255, 255, 255, 0.4); /* Define um fundo branco mais transparente do que .img-box. */
+    backdrop-filter: blur(40px); /* Aplica um efeito de desfoque no fundo atrás do elemento. */
+    padding: 30px 40px; /* Adiciona padding interno ao redor do conteúdo. */
+    width: 50%; /* Ocupa 50% da largura da .box. */
+    border-radius: 0 20px 20px 0; /* Arredonda os cantos superior direito e inferior direito. */
+}
+
+.form-box h2{
+    font-size: 30px; /* Define o tamanho da fonte para os títulos h2 dentro de .form-box. */
+}
+
+.form-box p{
+    font-weight: bold; /* Define o texto em negrito para parágrafos dentro de .form-box. */
+    color: #3D3D3D; /* Define a cor do texto como um cinza escuro. */
+}
+
+.form-box p a{
+    color: #c44f19; /* Define a cor dos links dentro dos parágrafos como um tom de laranja. */
+    text-decoration: none; /* Remove a sublinha padrão dos links. */
+}
+
+.form-box form{
+    margin: 20px 0; /* Adiciona uma margem vertical ao formulário. */
+}
+
+form .input-group{
+    margin-bottom: 15px; /* Adiciona um espaçamento inferior entre os grupos de entrada do formulário. */
+}
+
+form .input-group label{
+    color: #0f178b; /* Define a cor do texto das labels como azul escuro. */
+    font-weight: bold; /* Define as labels em negrito. */
+    display: block; /* Faz com que as labels ocupem toda a largura disponível. */
+    margin-bottom: 5px; /* Adiciona um espaçamento inferior de 5px às labels. */
+}
+
+form .input-group input{
+    width: 100%; /* Faz com que os campos de entrada ocupem toda a largura disponível. */
+    height: 47px; /* Define a altura dos campos de entrada. */
+    background-color: rgba(255, 255, 255, 0.32); /* Define uma cor de fundo branca semi-transparente. */
+    border-radius: 20px; /* Arredonda os cantos dos campos de entrada. */
+    outline: none; /* Remove a borda de destaque ao focar nos campos de entrada. */
+    border: 2px solid transparent; /* Define uma borda transparente que mudará ao focar. */
+    padding: 15px; /* Adiciona padding interno ao redor do texto no campo de entrada. */
+    font-size: 15px; /* Define o tamanho da fonte nos campos de entrada. */
+    color: #616161; /* Define a cor do texto dentro dos campos de entrada. */
+    transition: all 0.4s ease; /* Aplica uma transição suave nas mudanças de estilo. */
+}
+
+form .input-group input:focus{
+    border-color: #ff008869; /* Muda a cor da borda para um rosa laranja ao focar. */
+}
+
+form .input-group button{
+    width: 100%; /* Faz com que o botão ocupe toda a largura disponível. */
+    height: 47px; /* Define a altura do botão. */
+    background: #b95604; /* Define uma cor de fundo laranja para o botão. */
+    border-radius: 20px; /* Arredonda os cantos do botão. */
+    outline: none; /* Remove a borda de destaque ao focar no botão. */
+    border: none; /* Remove a borda padrão do botão. */
+    margin-top: 15px; /* Adiciona um espaçamento superior de 15px. */
+    color: white; /* Define a cor do texto do botão como branco. */
+    cursor: pointer; /* Muda o cursor para o ícone de mão ao passar sobre o botão. */
+    font-size: 16px; /* Define o tamanho da fonte do texto do botão. */
+}
+
+/* Estilos para telas menores que 930px de largura */
+@media (max-width:930px) {
+    .img-box{
+        display: none; /* Esconde a .img-box em telas menores para otimizar o espaço. */
+    }
+    .box{
+        width: 700px; /* Reduz a largura da .box para 700px. */
+    }
+    .form-box{
+        width: 100%; /* Faz a .form-box ocupar toda a largura da .box. */
+        border-radius: 20px; /* Arredonda todos os cantos da .form-box. */
+    }
+}
+
+/* Estilos para telas menores que 500px de largura */
+@media (max-width:500px) {
+    .w50{
+        width: 100%; /* Faz os elementos .w50 ocuparem toda a largura disponível. */
+        padding: 0; /* Remove o padding adicional dos elementos .w50. */
+    }
+}
