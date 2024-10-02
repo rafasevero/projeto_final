@@ -15,27 +15,26 @@
             <img src="img/beto carrero.png">
         </div>
         <div class="form-box">
-            <h2>Criar Conta</h2>
-            <p> Já é cadastrado? <a href="home.html"> Login </a> </p>
-            <form action="inserir2.php" method="post">
+            <h2>Cadastrar Ingressos</h2>
+            <form action="inserirProd.php" method="post">
                 <div class="input-group">
-                    <label for="nome"> Nome Completo</label>
-                    <input type="text" name="nome" placeholder="Digite o seu nome completo" required>
+                    <label for="data_visita"> Data da Visita</label>
+                    <input type="date" name="data_visita" required>
                 </div>
 
                 <div class="input-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" placeholder="Digite o seu email" required>
+                    <label for="quantidade">Quantidade de Ingressos</label>
+                    <input type="number" name="quantidade"  required>
                 </div>
 
                 <div class="input-group">
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" name="telefone" placeholder="Digite o seu telefone" required>
+                    <label for="preco">Preço R$:</label>
+                    <input type="text" name="preco" placeholder="Digite o valor de cada ingresso R$" required>
                 </div>
 
                 <div class="input-group w50">
-                    <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Digite sua senha" required>
+                    <label for="desconto">Desconto em %</label>
+                    <input type="text" name="desconto" placeholder="Digite o desconto %" required>
                 </div>
 
                
