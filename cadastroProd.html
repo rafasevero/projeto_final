@@ -19,7 +19,7 @@
             <form action="inserirProd.php" method="post">
                 <div class="input-group">
                     <label for="data_visita"> Data da Visita</label>
-                    <input type="date" name="data_visita" required>
+                    <input type="datetime" name="data_visita" required>
                 </div>
 
                 <div class="input-group">
@@ -37,8 +37,20 @@
                     <input type="text" name="desconto" placeholder="Digite o desconto %" required>
                 </div>
 
+                <div class="input-group w50">
+                    <label for="tipo_ingresso">Tipo de Ingresso</label>
+                    <select name="tipo_ingresso" id="tipo_ingresso" required>
+                        <option value="">Selecione um tipo de ingresso</option>
+                        <option value="adulto">Ingresso Adulto</option>
+                        <option value="vip">Passe VIP - Fura Fila</option>
+                        <option value="estacionamento">Estacionamento</option>
+                        <option value="menor_12">Menores de 12 anos</option>
+                        <option value="maior_65">Maiores de 65 anos</option>
+                        <option value="aniversario">Aniversário</option>
+
+                    </select>
+                </div>
                
-            <input type="submit">    
                 <div class="input-group">
                     <button>Cadastrar</button>
                 </div>

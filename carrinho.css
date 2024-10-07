@@ -1,0 +1,152 @@
+/* Definindo a paleta de cores */
+:root {
+    --branco: #ffffff;
+    --azul-claro: #bcbeff;
+    --cinza-escuro: #333333;
+    --azul-beto: #005BAA; 
+    --amarelo-beto: #FFD100; 
+    --vermelho-beto: #E4002B;
+}
+
+/* corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:url(../projeto_final/img/fundo2.png);
+
+    color: var(--cinza-escuro);
+}
+
+/* cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: var(--azul-beto); 
+    color: var(--branco);
+    padding: 20px 20px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* lado esquerdo do cabeçalho */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+/* imagem do Beto Carrero */
+.beto-image {
+    width: 100px; 
+    height: auto;
+    margin-right: 15px;
+}
+
+/* lado direito do cabeçalho */
+.header-right {
+    display: flex; 
+}
+
+/* botões */
+.header-btn {
+    background-color:#d56e07;
+    color: var(--branco); 
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    margin-left: 10px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+.header-btn:hover {
+    background-color:#ae7d4c;
+}
+
+/* container principal */
+.container {
+    margin: 50px auto;
+    max-width: 900px;
+    background-color: var(--branco);
+    padding: 30px;
+    border-radius: 20px; 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); 
+    border: 1px solid var(--cinza-claro);
+}
+
+/* cada item no carrinho */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--cinza-claro);
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+/* Detalhes do item (imagem + nome) */
+.item-details {
+    display: flex;
+    align-items: center;
+}
+
+/* Imagem */
+.item-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+/* imagem dentro do item */
+.item-image img {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.item-name {
+    font-size: 18px;
+    color: var(--azul-beto); 
+    font-weight: 500;
+}
+
+.item-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--cinza-escuro);
+}
+
+.total {
+    text-align: right;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--vermelho-beto);
+    margin-top: 20px;
+}
+
+/* botão de finalizar compra */
+.checkout-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--azul-beto); 
+    color: var(--branco); 
+    text-align: center;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.checkout-btn:hover {
+    background-color: var(--amarelo-beto);
+}
+
+.checkout-btn:active {
+    transform: scale(0.98); /* Efeito de clique */
+}

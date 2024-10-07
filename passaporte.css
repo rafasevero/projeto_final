@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background:url(../projeto_final/img/fundo2.png);
+
+    margin: 0;
+    padding: 20px;
+}
+a{
+    font-family: Arial, sans-serif;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none; /* Remove o sublinhado */
+
+
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.ticket-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.ticket {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(30% - 20px);
+    box-shadow: 0 2px 5px rgba(32, 13, 3, 0.825);
+    transition: transform 0.2s;
+}
+
+.ticket:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #007BFF;
+}
+
+button {
+    background-color: #c16011;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #051b97;
+}
