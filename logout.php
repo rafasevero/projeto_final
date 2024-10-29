@@ -1,9 +1,13 @@
 <?php
-include('topo.php');
-session_start();
-$_SESSION['email'] = null;
+session_start(); // Inicia a sessão
+
+// Remove todas as variáveis da sessão
+session_unset();
+
+// Destroi a sessão
 session_destroy();
-echo "Logout realizado com sucesso!<br><br><br>
-<a href='home.html'>Entrar novamente</a>";
-include('final.html');
+
+// Redireciona para a página de login após o logout
+header("Location: home.html");
+exit(); // Para garantir que o script pare aqui
 ?>

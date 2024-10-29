@@ -88,6 +88,7 @@ ul li a{
     font-family: Arial;
     font-weight: bold;
     transition: 0.4s ease-in-out;
+    cursor: pointer;
 }
 
 ul li a:hover{
