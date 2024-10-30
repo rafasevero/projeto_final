@@ -17,7 +17,7 @@
                             <li><a href="listar.php">Gerenciar Ingresso</a></li>
                         <?php } else { ?>
                             <li><a href="home2.html">HOME</a></li>
-                            <li><a href="ver_carrinho.php">Comprar</a></li>
+                            <li><a href="ver_tickets.php">Comprar</a></li>
                             <li><a href="add_carrinho.php">Carrinho</a></li>
                         <?php } ?>
                         <li><a href='logout.php'>SAIR</a></li>

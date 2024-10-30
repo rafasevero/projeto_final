@@ -1,18 +1,21 @@
 <?php
 session_start();
+include('sessao.php');
+
 $con = mysqli_connect('localhost', 'root', '', 'projetofinal');
 if (!$con) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$idSales = $_GET['idSales'];
-$sql = "DELETE FROM sales WHERE idSales = $idSales";
+if (isset($_GET['idSales'])) {
+    $idSales = $_GET['idSales'];
 
-if (mysqli_query($con, $sql)) {
-    header("Location: add_carrinho.php");
-} else {
-    echo "Erro ao remover do carrinho: " . mysqli_error($con);
+    // Remover o ingresso do carrinho
+    $sql = "DELETE FROM sales WHERE idSales = '$idSales'";
+    mysqli_query($con, $sql);
 }
 
 mysqli_close($con);
+header("Location: ver_carrinho.php");
+exit;
 ?>

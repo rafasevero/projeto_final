@@ -1,5 +1,6 @@
 <?php
 include("sessao.php");
+include("topo.php");
 $conexao = mysqli_connect('localhost','root','','projetofinal');
 $sql = "SELECT * FROM ticket";
 $executar = mysqli_query($conexao, $sql);
