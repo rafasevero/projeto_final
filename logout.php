@@ -8,6 +8,6 @@ session_unset();
 session_destroy();
 
 // Redireciona para a página de login após o logout
-header("Location: home.html");
+header("Location: logout_success.php");
 exit(); // Para garantir que o script pare aqui
 ?>

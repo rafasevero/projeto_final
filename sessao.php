@@ -7,11 +7,9 @@ if (session_status() == PHP_SESSION_NONE) {
 if (isset($_SESSION['email'])) {
     $email = $_SESSION['email'];
     $adm = $_SESSION['adm'];
-    
-    if ($email == null) {
-        die("Usuário não autenticado!<a href='login.php'>Logar</a>");
-    }
-} else {
-    die("Usuário não autenticado!<a href='login.php'>Logar</a>");
+    $data_nascimento = $_SESSION['data_nascimento'] ; // Armazenar a data de nascimento na sessão
+}
+ else {
+    die("Usuário não autenticado!<a href='home.html'>Logar</a>");
 }
 ?>

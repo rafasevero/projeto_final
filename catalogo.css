@@ -17,13 +17,15 @@ p{
 
 .main{
     width: 100%;
-    background: linear-gradient(to top,rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(../projeto_final/fundo.jpg);
-    background-position:top;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(../projeto_final/img/fundo2.png);
+    background-size: 100%;
     background-size: cover;
     height: 109vh;
 }
 .navbar{
     width: 1200px;
+    display: flex ;
+    justify-content: left;
     height: 75px;
     margin: auto;
 }
@@ -32,6 +34,10 @@ p{
     width: 200px;
     float: left;
     height: 70px;
+}
+.icon .logo {
+    width: 150px; /* ajuste o tamanho conforme necessário */
+    height: auto; /* mantém a proporção da imagem */
 }
 
 .logo{
@@ -50,6 +56,7 @@ p{
     height: 70px;
 }
 
+
 .default-btn{
     padding: 15px 20px;
     background-color: #062f6d ;
@@ -62,12 +69,7 @@ p{
     cursor: pointer;
 }
 
-.main-banner{
-    background-size:auto;
-    background-position:center;
-    padding:10em 0;
-    position: relative;
-}
+
 ul{
     float: left;
     display: flex;
@@ -240,8 +242,10 @@ ul li a:hover{
     background-image: url(img/carrossel.jpg);
     background-position: center;
 }
-
-
+.card-16 .card-image{
+    background-image: url(img/circusplaza2.jpg);
+    background-position: center;
+}
 
 .contact-container {
     text-align: center;

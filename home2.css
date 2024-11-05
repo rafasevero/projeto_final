@@ -5,7 +5,7 @@
 
 .main{
     width: 100%;
-    background: linear-gradient(to top,rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(../projeto_final/img/fundo2.png);
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%),url(../projeto_final/fundo.jpg);
     background-size: 100%;
     background-size: cover;
     height: 109vh;
